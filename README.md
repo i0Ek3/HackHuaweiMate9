@@ -1,4 +1,13 @@
-# huawei-honor-unlock-bootloader
+# Hack HUAWEI Mate 9
+
+## TL;DR
+
+- get the unlock code: buy the service on Taobao.com with 30RMB or calculate the code by this project
+- unlock the phone: use [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) and the code to unlock your device or run command `fastboot oem unlock your_code`
+    - our huawei mate9's code is: 9750470288808895
+- flash the twrp recovery, ref [here](https://forum.xda-developers.com/t/recovery-27-09-2017-3-1-1-0-twrp-for-the-huawei-mate-9-hi3660.3515617/), files you can find in /tool
+- flash treble GSI ROM, please go to [here](https://github.com/phhusson/treble_experimentations/releases) to download treble rom
+
 
 ## Summary
 
@@ -10,6 +19,7 @@ It uses a bruteforce method, based on the IMEI identifier to generate unlocking 
 
 This will most likely only work on European versions, 
 because these only use numbers in the bootloader unlock code.
+Actually Chinese version also wrok yet.
 
 I've only had the opportunity to test it on European versions:
 - Honor  5x 8x and 9x
@@ -18,6 +28,7 @@ I've only had the opportunity to test it on European versions:
 - Huawei p20 lite
 - Huawei Y6 2019
 - Huawei p30
+- Huawei Mate 9
 
 
 ## Instructions
@@ -30,7 +41,7 @@ I've only had the opportunity to test it on European versions:
     ```batch
     C:\WINDOWS\system32> python unlock.py
     ```
-    Linux:
+    Linux/macOS:
     ```shell
     $ python3 unlock.py
     ```

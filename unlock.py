@@ -18,18 +18,18 @@ quickstart = False      #set to True to not need to confirm on script start, sho
 def bruteforceBootloader(increment):
 
 #    algoOEMcode = 0000000000000000
-    algoOEMcode     = 1000000000000000  #base to start bruteforce from
+    algoOEMcode     = 9000000000000000  #base to start bruteforce from
     autoreboot      = False             #set this to True if you need to prevent the automatic reboot to system by the bootloader after x failed attempts, code will automatically set this to true if it detects a reboot by the bootloader
     autorebootcount = 4                 #reboot every x attemps if autoreboot is True, set this one below the automatic reboot by the bootloader
     savecount       = 200               #save progress every 200 attempts, do not set too low to prevent storage wearout
     unknownfail     = True              #fail if output is unknown, only switch to False if you have problems with this
-    
+
     failmsg = "check password failed"   #used to check if code is wrong
-    
+
     unlock=False
     n=0
     while (unlock == False):
-        print("Bruteforce is running...\nCurrently testing code "+str(algoOEMcode).zfill(16)+"\nProgress: "+str(round((algoOEMcode/10000000000000000)*100, 2))+"%")
+        print("Bruteforce is running...\nCurrently testing code "+str(algoOEMcode).zfill(16)+"\nProgress: "+str(round((algoOEMcode/90000000000000000)*100, 2))+"%")
         output = subprocess.run("fastboot oem unlock " + str(algoOEMcode).zfill(16), shell=True, stderr=subprocess.PIPE).stderr.decode('utf-8')
         print(output)
         output = output.lower()
@@ -70,7 +70,7 @@ def bruteforceBootloader(increment):
 
         algoOEMcode += increment
 
-        if (algoOEMcode > 10000000000000000):
+        if (algoOEMcode > 90000000000000000):
             print("OEM Code not found!\n")
             os.system("fastboot reboot")
             exit()
@@ -101,7 +101,7 @@ print("Please select \"Always allow from this computer\" in the adb dialog!")
 
 checksum = 1
 while (checksum != 0):
-    if staticimei == 0: 
+    if staticimei == 0:
         imei = int(input('Type IMEI: '))
     if staticimei > 0:
         imei = staticimei
