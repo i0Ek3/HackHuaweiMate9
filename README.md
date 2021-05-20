@@ -2,10 +2,10 @@
 
 ## TL;DR
 
-- get the unlock code: buy the service on Taobao.com with 30RMB or calculate the code by this project
+- get the unlock code: buy the service on Taobao.com with 20~30RMB or calculate the code by this project, you can change the base number to find it out rapidly
 - unlock the phone: use [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) and the code to unlock your device or run command `fastboot oem unlock your_code`
     - our huawei mate9's code is: 9750470288808895
-- flash the twrp recovery, ref [here](https://forum.xda-developers.com/t/recovery-27-09-2017-3-1-1-0-twrp-for-the-huawei-mate-9-hi3660.3515617/), files you can find in /tool
+- flash the twrp recovery, ref [here](https://forum.xda-developers.com/t/recovery-27-09-2017-3-1-1-0-twrp-for-the-huawei-mate-9-hi3660.3515617/), files you can find in /tools
 - flash treble GSI ROM, please go to [here](https://github.com/phhusson/treble_experimentations/releases) to download treble rom
 
 
