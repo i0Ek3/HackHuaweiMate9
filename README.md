@@ -5,9 +5,13 @@
 - get the unlock code: buy the service on Taobao.com with 20~30RMB or calculate the code by this project, you can change the base number to find it out rapidly
 - unlock the phone: use [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) and the code to unlock your device or run command `fastboot oem unlock your_code`
     - our huawei mate9's code is: 9750470288808895
+    - if you want to use PotatoNV, please check [this post](https://github.com/mashed-potatoes/PotatoNV/issues/20) and use file Huawei_drivers_testpoint.zip to shortcruit your smartphone [ps: I got failed]
 - flash the twrp recovery, ref [here](https://forum.xda-developers.com/t/recovery-27-09-2017-3-1-1-0-twrp-for-the-huawei-mate-9-hi3660.3515617/), files you can find in /tools
 - flash treble GSI ROM, please go to [here](https://github.com/phhusson/treble_experimentations/releases) to download treble rom
 
+## Issues in Upgrade
+ 
+The purpose of unlock the phone is flash third ROM what I liked. But when TaoBao seller unlock the phone, the system version is back to EMUI 5.0(Android 7.0), this version is so lag and unsafety and he is never told me this version cannot upgrade again, I can't believe this, so I try to upgrade it to the latest version EMUI 8.0, but I got failed whatever. Fuck it, I find the solution what I can find on the internet, and the last I found one, [this post](https://club.huawei.com/thread-17096431-1-1.html?extra=filter%3Dtypeid%26typeid%3D4298%26page%3D1) let me get into the next level, the twrp recovery flash message told me I flashed successful, but my phone dead: she is never boot again. `>_<!!!!` I don't why, she is so quiet without any response when I press the power button. So sad! The operation of cause this problem is when twrp flash done, I do not reboot it into recovery mode, in this suation I just press volume+ and power to get it, and then she got black screen without any response. So be careful.  
 
 ## Summary
 
