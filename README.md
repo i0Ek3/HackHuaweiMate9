@@ -2,6 +2,7 @@
 
 ## TL;DR
 
+- if you want to play with geek, don't use huawei's smartphone
 - get the unlock code: buy the service on Taobao.com with 20~30RMB or calculate the code by this project, you can change the base number to find it out rapidly
 - unlock the phone: use [PotatoNV](https://github.com/mashed-potatoes/PotatoNV) and the code to unlock your device or run command `fastboot oem unlock your_code`
     - our huawei mate9's code is: 9750470288808895
