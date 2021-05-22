@@ -18,7 +18,7 @@ Check [this post](https://github.com/ProfessorJTJ/HISuite-Proxy/wiki/Complete-Gu
 
 Before start, please get your phone's version info: in the dial interface input `*#*#2846579#*#*`.
 
-![](#./media/version_info.jpg)
+![](https://github.com/i0Ek3/HackHuaweiMate9/blob/master/media/version_info.jpg)
 
 ## Issues in Upgrade
 
