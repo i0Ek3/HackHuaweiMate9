@@ -10,11 +10,20 @@
 - flash the twrp recovery, ref [here](https://forum.xda-developers.com/t/recovery-27-09-2017-3-1-1-0-twrp-for-the-huawei-mate-9-hi3660.3515617/), files you can find in /tools
 - flash treble GSI ROM, please go to [here](https://github.com/phhusson/treble_experimentations/releases) to download treble rom
 
-## Issues in Upgrade
- 
-The purpose of unlock the phone is flash third ROM what I liked. But when TaoBao seller unlock the phone, the system version is back to EMUI 5.0(Android 7.0), this version is so lag and unsafety and he is never told me this version cannot upgrade again, I can't believe this, so I try to upgrade it to the latest version EMUI 8.0, but I got failed whatever. Fuck it, I find the solution what I can find on the internet, and the last I found one, [this post](https://club.huawei.com/thread-17096431-1-1.html?extra=filter%3Dtypeid%26typeid%3D4298%26page%3D1) let me get into the next level, the twrp recovery flash message told me I flashed successful, but my phone dead: she is never boot again. `>_<!!!!` I don't why, she is so quiet without any response when I press the power button. So sad! The operation of cause this problem is when twrp flash done, I do not reboot it into recovery mode, in this suation I just press volume+ and power to get it, and then she got black screen without any response. So be careful.  
+## Downgrade
 
-Relife today through taobao seller.
+Check [this post](https://github.com/ProfessorJTJ/HISuite-Proxy/wiki/Complete-Guide
+) to know more details about how to downgrade with HiSuite-Proxy and HiSuite, you can find the files under the /4downgrade or just download them on [this page](https://github.com/ProfessorJTJ/HISuite-Proxy/releases/
+). Also you need to know [this site](https://www.firmfinder.ml/).
+
+Before start, please get your phone's version info: in the dial interface input `*#*#2846579#*#*`.
+
+![](#./media/version_info.jpg)
+
+## Issues in Upgrade
+
+The purpose of unlocking the phone is that I want to brush my favorite third-party ROM. But when Taobao sellers unlock my phone, the system version is back to EMUI5.0 (Android 7), this version is too laggy and unsafe, and he never told me that this version could not be upgraded. NO WAY! I tried to upgrade it's version to the latest EMUI8.0, but I failed. Damn it, I've gone through all the solutions I can find online, but [this
+post](https://club.huawei.com/thread-17096431-1-1.html?extra=filter%3Dtypeid%26typeid%3D4298%26page%3D1) turns my cell phone into a black brick. I don't know why, when I press the power button, the phone doesn't respond. Finally, the taobao seller rescued the black brick. And then I fuck it up again, phone's system dismissed until now. So if you want to upgrade your phone, please be careful and think it clear. Attention you ROM version, don't learn me again!
 
 ## Summary
 
@@ -78,3 +87,9 @@ The script will also automatically detect this behaviour. For this to work relia
 **- The script displays "command invalid"**  
 Huawei has removed the unlock command in EMUI 10.  
 Downgrade your software and try again.
+
+## Credit
+
+- [@SkyEmie](https://github.com/SkyEmie) Original Author
+- [@ProfessorJTJ](https://github.com/ProfessorJTJ/)
+- Motherfucker HUAWEI
